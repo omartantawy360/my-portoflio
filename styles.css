@@ -244,6 +244,119 @@ body {
     bottom: 0;
     width: 100%;
 }
+/* إعادة تعيين عام وتحسينات للـ Responsive */
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* تحسينات للهيدر */
+header {
+    background-color: #f0f0f0;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    color: #3a6cf4;
+    cursor: pointer;
+}
+
+.nav {
+    display: flex;
+}
+
+.nav a {
+    color: #3a6cf4;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    margin-left: 30px;
+}
+
+/* تحسينات للقسم الرئيسي */
+.main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: #140734;
+    padding: 100px 5%;
+}
+
+.main h2 {
+    color: #fff;
+    font-size: 1.4em;
+    font-weight: 500;
+}
+
+.main h2 span {
+    display: inline-block;
+    margin-top: 10px;
+    color: #0025f5;
+    font-weight: 700;
+    font-size: clamp(2em, 5vw, 3em);
+}
+
+.main h3 {
+    color: #fff;
+    font-size: clamp(1.2em, 3vw, 2em);
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+/* تحسينات للبطاقات */
+.content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background-color: #fff;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 20%);
+    border-radius: 10px;
+    padding: 25px;
+    transition: 0.5s;
+}
+
+/* تحسينات للمشاريع والشهادات */
+.projects, .certificates {
+    padding: 80px 5%;
+}
+
+.boxs {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+/* تحسينات للفوتر */
+.footer {
+    background-color: #140734;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* استعلامات الوسائط للشاشات الصغيرة */
 @media (max-width: 768px) {
     header {
         padding: 10px 20px;
