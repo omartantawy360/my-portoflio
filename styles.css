@@ -216,9 +216,9 @@ body {
 .box:hover .box-hover {
   opacity: 1;
 }
-.projects .boxs .box:hover img,
-.certificates .boxs .box:hover img {
-    transform: scale(1.2);
+.projects .boxs .box:hover ,
+.certificates .boxs .box:hover  {
+    transform: scale(1.1);
     transition: 0.6s ease-out;
 }
 .projects, .certificates {
